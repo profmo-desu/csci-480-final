@@ -14,8 +14,11 @@ def handle_get(event):
     param_name = "color"
     color = rest_interface.get_query_parm(event, param_name)
     key = f"/rhymes/{color}"
-    stanza = rest_interface.s3_get_object(key)
-    return {"stanza": stanza}
+    try:
+        stanza = rest_interface.s3_get_object(key)
+        return {"stanza": stanza}
+    except:
+        return {"stanza": f"I don't have a rhyme for {color}"}
 
 
 def handle_post(event):
