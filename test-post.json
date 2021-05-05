@@ -1,0 +1,10 @@
+{
+  "httpMethod": "POST",
+  "body": {
+    "rhymes": {
+      "blue": "Don't be blue. Cheer up and do you. Because the Prince is coming with your glass shoe",
+      "gold": "You are not old, but you are bold. And don't fold. Under pressure.",
+      "red": "Shave your bold head. Before your dog ends up dead. Because you ran over it with a sled."
+    }
+  }
+}
